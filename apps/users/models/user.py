@@ -61,10 +61,24 @@ class User(AbstractUser):
         help_text='Если включено, пользователь не сможет войти в систему.'
     )
 
+    first_name = models.CharField(
+        max_length=150,
+        verbose_name='Имя',
+        blank=True,
+        help_text='Введите имя пользователя'
+    )
+
+    last_name = models.CharField(
+        max_length=150,
+        verbose_name='Фамилия',
+        blank=True,
+        help_text='Введите фамилию пользователя'
+    )
+
     objects = CustomUserManager()
 
     def __str__(self):
-        return f"{self.username} ({self.get_role_display()})"
+        return f"{self.get_full_name()} ({self.get_role_display()})"
 
     class Meta:
         verbose_name = 'Пользователь'
