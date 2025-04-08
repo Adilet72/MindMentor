@@ -15,6 +15,8 @@ schema_view = get_schema_view(
    ),
    public=True,
    permission_classes=(permissions.AllowAny,),
+    url="https://mindmentor.up.railway.app/api",
+
 )
 
 urlpatterns = [
