@@ -1,0 +1,92 @@
+[
+  {
+    "model": "users.specialization",
+    "pk": 1,
+    "fields": {
+      "title": "Python",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "users.specialization",
+    "pk": 2,
+    "fields": {
+      "title": "Frontend",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "users.specialization",
+    "pk": 3,
+    "fields": {
+      "title": "Backend",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "users.specialization",
+    "pk": 4,
+    "fields": {
+      "title": "Design",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "users.specialization",
+    "pk": 5,
+    "fields": {
+      "title": "Математика",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "users.experience",
+    "pk": 1,
+    "fields": {
+      "title": "Intern",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "users.experience",
+    "pk": 2,
+    "fields": {
+      "title": "Junior",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "users.experience",
+    "pk": 3,
+    "fields": {
+      "title": "Middle",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "users.experience",
+    "pk": 4,
+    "fields": {
+      "title": "Senior",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "users.experience",
+    "pk": 5,
+    "fields": {
+      "title": "Tech Lead",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  }
+]
