@@ -1,3 +1,4 @@
+from django.core.validators import MinValueValidator, MaxValueValidator
 from django.db import models
 from core.models import BaseModel
 from .user import User
@@ -65,6 +66,7 @@ class MentorProfile(BaseModel):
         max_digits=3,
         decimal_places=2,
         default=0.00,
+        validators=[MinValueValidator(0.00), MaxValueValidator(5.00)],
         verbose_name='Рейтинг',
         help_text='Рейтинг ментора от 0.00 до 5.00.'
     )

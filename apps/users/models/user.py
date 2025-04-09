@@ -2,6 +2,8 @@ from django.contrib.auth.base_user import BaseUserManager
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
+from core.models import BaseModel
+
 
 class CustomUserManager(BaseUserManager):
     def create_user(self, username, email=None, password=None, **extra_fields):
@@ -33,7 +35,7 @@ class CustomUserManager(BaseUserManager):
         return self.create_user(username, email, password, **extra_fields)
 
 
-class User(AbstractUser):
+class User(AbstractUser, BaseModel):
     class Role(models.TextChoices):
         USER = 'user', 'Пользователь'
         MENTOR = 'mentor', 'Ментор'
