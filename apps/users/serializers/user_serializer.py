@@ -37,3 +37,17 @@ class UserSerializer(serializers.ModelSerializer):
             instance.set_password(password)
         instance.save()
         return instance
+
+
+class UserBlockSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ['id', 'is_blocked', 'first_name', 'last_name', 'role']
+
+    def update(self, instance, validated_data):
+        is_blocked = validated_data.get('is_blocked', instance.is_blocked)
+        if is_blocked != instance.is_blocked:
+            instance.is_blocked = is_blocked
+            instance.save()
+            return instance
+        return instance
