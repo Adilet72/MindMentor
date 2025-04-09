@@ -49,8 +49,11 @@ class MentorCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = MentorProfile
         fields = [
-            'id','user', 'specialization', 'experience'
+            'id','user', 'specialization', 'experience','rating','reviews_count','created_at'
         ]
+        read_only_fields = ('rating','reviews_count','created_at')
+
+
 
     def create(self, validated_data):
         user_data = validated_data.pop('user')
