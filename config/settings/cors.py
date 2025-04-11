@@ -26,5 +26,8 @@ CORS_ALLOWED_ORIGIN_REGEXES = [
     r"^http://localhost(:\d+)?$",
     r"^https://mindmentor\.up\.railway\.app$",
 ]
+CSRF_TRUSTED_ORIGINS = [
+    "https://mindmentor.up.railway.app",
+]
 
 
