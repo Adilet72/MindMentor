@@ -1,5 +1,6 @@
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from rest_framework.exceptions import AuthenticationFailed
+from rest_framework import serializers
 
 class AdminLoginSerializer(TokenObtainPairSerializer):
     def validate(self, attrs):
@@ -19,3 +20,7 @@ class AdminLoginSerializer(TokenObtainPairSerializer):
         })
 
         return data
+
+
+class LogoutSerializer(serializers.Serializer):
+    refresh = serializers.CharField()
