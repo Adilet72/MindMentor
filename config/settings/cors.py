@@ -22,9 +22,9 @@ CORS_ALLOW_HEADERS = [
 ]
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_ORIGIN_REGEXES = [
-    r"^http://127\.0\.0\.1(:\d+)?$",  # Разрешить все порты для 127.0.0.1
+    r"^http://127\.0\.0\.1(:\d+)?$",
     r"^http://localhost(:\d+)?$",
-    "https://mindmentor.up.railway.app/",# Разрешить все порты для localhost
+    r"^https://mindmentor\.up\.railway\.app$",
 ]
 
 
